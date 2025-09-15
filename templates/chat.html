@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyChat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <h2>مرحباً {{ user.name if user else 'Guest' }}</h2>
+    <div id="chat-box"></div>
+    <input id="msg" placeholder="اكتب رسالتك هنا">
+    <button onclick="sendMessage()">إرسال</button>
+</body>
+</html>
